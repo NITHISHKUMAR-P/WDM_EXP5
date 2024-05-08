@@ -1,12 +1,13 @@
-### EX5 Information Retrieval Using Boolean Model in Python
-### DATE: 23/03/2024
-### AIM: 
+### EX NO : 05
+### DATE: 
+# <p align="center">Information Retrieval Using Boolean Model in Python</p>
+## AIM: 
 To implement Information Retrieval Using Boolean Model in Python.
-### Description:
+## Description:
 <div align = "justify">
-The Boolean model in Information Retrieval (IR) is a fundamental model used for searching and retrieving information from a collection of documents. It operates on the principles of set theory and logic, where documents are represented as sets of terms or words, and queries are expressed as Boolean expressions using logical operators such as AND, OR, and NOT.
+The Boolean model in Information Retrieval (IR) is a fundamental model used for searching and retrieving information from a collection of documents. It operates on the principles of set theory and logic, where documents are represented as sets of terms or words, and queries are expressed as Boolean expressions using logical operators such as AND, OR, and NOT. 
   
-### Procedure:
+## Procedure:
 1. ***Initialize the BooleanRetrieval class:*** The BooleanRetrieval class is defined to manage the indexing and searching of documents.
 2. ***Constructor and Index Initialization:*** The class constructor initializes an empty index to store the inverted index mapping terms to documents.
 3. ***Indexing Documents:***
@@ -22,8 +23,7 @@ The Boolean model in Information Retrieval (IR) is a fundamental model used for 
     <p>b) Tokenize the input query and iterates through its terms.
     <p>c) For each term in the query, it retrieves documents containing that term and performs Boolean operations (AND, OR, NOT) based on the query's structure.
 
-### Program:
-
+## Program:
 ```
 import numpy as np
 import pandas as pd
@@ -81,7 +81,6 @@ class BooleanRetrieval:
 
       return list(results) if results else []
 
-
 # Example usage:
 if __name__ == "__main__":
     indexer = BooleanRetrieval()
@@ -107,8 +106,7 @@ if __name__ == "__main__":
     query1 = input("Enter your boolean query: ")
     print(f"Results for '{query1}': {indexer.boolean_search(query1)}")
 ```
-### Output:
+## Output:
 ![image](https://github.com/NITHISHKUMAR-P/WDM_EXP5/assets/93427017/5badd4b3-9fa1-46b2-9290-37c81b8d03d1)
-
-### Result:
+## Result:
 Thus, Information Retrieval Using Boolean Model in Python has been successfully implemented.
